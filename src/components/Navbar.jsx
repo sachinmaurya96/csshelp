@@ -9,9 +9,9 @@ function Navbar() {
       <Wrapper>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <NavLink className="navbar-brand" to="/">
               <FaCss3 />
-            </a>
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
@@ -36,23 +36,8 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/card">
-                    Card
-                  </NavLink>
-                </li>
-                <li className="nav-item">
                   <NavLink className="nav-link" to="/shadow">
                     Shadow
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
-                    Color
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/">
-                    Gredient color
                   </NavLink>
                 </li>
               </ul>

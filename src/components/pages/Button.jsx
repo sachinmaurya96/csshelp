@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { button } from './btns';
+import { button } from '../reuseble/btns';
 import { FaGithub , FaLinkedin,FaBookmark} from 'react-icons/fa';
 
 function Button() {
