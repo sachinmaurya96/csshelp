@@ -7,7 +7,7 @@ function Footer() {
     <>
      <Wrapper>
       <div className="footer">
-        created by <a href="#">Sachin Maurya <FaGithub/></a>
+        created by <a href="https://github.com/sachinmaurya96" target='_blank' rel="noreferrer">Sachin Maurya <FaGithub/></a>
       </div>
       </Wrapper> 
     </>

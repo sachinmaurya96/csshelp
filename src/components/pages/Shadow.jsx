@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { shad } from '../reuseble/shad'
+import Head from '../reuseble/Head'
 
 function Shadow() {
   const copy = async (id) =>{
@@ -18,7 +19,8 @@ function Shadow() {
   return (
     <>
      <Wrapper>
-      <div className="container">
+      <div className="container mb-5">
+        <Head title="Beautifull shadow effects"/>
           <div className="grid">
               {
                 shad.map((elem)=>{
@@ -34,17 +36,10 @@ function Shadow() {
 
 const Wrapper = styled.section`
 
-.row div{
-  height: 200px;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
   .grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
+    grid-gap: 70px;
     padding-top: 30px;
 
     .item{
@@ -53,22 +48,19 @@ const Wrapper = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
     }
   }
-
   ${
     shad.map((elem)=>{
-      return elem.style
+      return elem.style;
     })
-  }
+}
   @media (max-width: 768px){
     .grid{
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  @media (max-width: 321px){
+  @media (max-width: 426px){
     .grid{
       grid-template-columns: repeat(1, 1fr);
     }
