@@ -40,6 +40,11 @@ function Navbar() {
                     Shadow
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/card">
+                    Card
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>
